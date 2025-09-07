@@ -50,7 +50,6 @@ class _ApplyLoanScreenState extends State<ApplyLoanScreen> {
 
     if (loan != null) {
       Get.snackbar('Success', 'Loan applied successfully');
-      // Pass the created loan to the Offering screen if needed
       Get.toNamed('/offering', arguments: loan);
     } else {
       Get.snackbar('Error', 'Failed to apply for loan');
@@ -506,7 +505,6 @@ class LoanAmountSlider extends StatelessWidget {
   }
 }
 
-// Loan Period Slider
 class LoanPeriodSlider extends StatelessWidget {
   final double value;
   final ValueChanged<double> onChanged;

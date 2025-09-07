@@ -69,7 +69,6 @@ class AuthController extends GetxController {
         await prefs.setString('jwt_token', token);
 
         Get.snackbar("Success", "OTP verified successfully");
-
         Future.microtask(() {
           final bool isNewUser =
               data['user']['name'] == null || data['user']['name'].isEmpty;
@@ -137,7 +136,6 @@ class AuthController extends GetxController {
     }
   }
 
-  /// ✅ Fetch logged-in user's profile
   Future<UserModel?> getUserProfile() async {
     try {
       isLoading.value = true;

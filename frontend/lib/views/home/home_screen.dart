@@ -66,7 +66,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 fontFamily: 'Montserrat',
                 fontWeight: FontWeight.w600,
                 color: Colors.white,
-                fontSize: SizeConfig.screenWidth * 0.035,
+                fontSize: SizeConfig.screenWidth * 0.03,
               ),
             ),
           ],

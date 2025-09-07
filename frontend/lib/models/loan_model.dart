@@ -23,7 +23,6 @@ class LoanModel {
     required this.updatedAt,
   });
 
-  // ✅ Factory to parse from JSON
   factory LoanModel.fromJson(Map<String, dynamic> json) {
     return LoanModel(
       id: json['_id'] ?? '',
@@ -43,7 +42,6 @@ class LoanModel {
     );
   }
 
-  // ✅ Convert to JSON (optional, for sending updates)
   Map<String, dynamic> toJson() {
     return {
       '_id': id,
